@@ -1,4 +1,4 @@
-import { GraduationCap, BadgeCheck, Sparkles } from "lucide-react";
+import { GraduationCap, BadgeCheck, Sparkles, ExternalLink } from "lucide-react";
 import { education, certifications, languages, qiyasTraining } from "@/lib/data";
 
 export default function Education() {
@@ -43,6 +43,16 @@ export default function Education() {
                 <span className="flex flex-col">
                   <span className="text-sm text-ink-dim">{c.name}</span>
                   {c.org && <span className="mt-0.5 font-mono text-[11px] text-ink-faint">{c.org}</span>}
+                  {"file" in c && c.file && (
+                    <a
+                      href={c.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1.5 inline-flex w-fit items-center gap-1 font-mono text-[11px] text-signal hover:underline"
+                    >
+                      View certificate <ExternalLink size={11} />
+                    </a>
+                  )}
                 </span>
               </div>
             ))}
