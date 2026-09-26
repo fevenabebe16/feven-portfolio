@@ -14,7 +14,7 @@ export const profile = {
   phone: "+251 988 997 925",
   github: "https://github.com/fevenabebe",
   linkedin: "https://www.linkedin.com/in/feven-abebe-459b15211/",
-  portfolio: "https://feven-abebe.vercel.app",
+  portfolio: "https://feven-portfolio-six.vercel.app/",
   availability: "Immediately",
   careerGoal: "Employment / Internship",
   summary:
@@ -226,8 +226,16 @@ export const skills = {
 
 export const certifications = [
   { name: "Data Science and AI Engineering", org: "Qiyas, Addis Ababa University · 2026" },
-  { name: "SAFEE KAIM", org: "Kifiya AI Mastery Training Program, 10 Academy Women-Only Cohort · 2026" },
-  { name: "GCI World April 2026 — Data Science", org: "Matsuo-Iwasawa Laboratory, University of Tokyo · 2026" },
+  {
+    name: "SAFEE KAIM",
+    org: "Kifiya AI Mastery Training Program, 10 Academy Women-Only Cohort · 2026",
+    file: "/kaim-safee-kaim.pdf",
+  },
+  {
+    name: "GCI World April 2026 — Data Science",
+    org: "Matsuo-Iwasawa Laboratory, University of Tokyo · 2026",
+    file: "/gci-world-2026.pdf",
+  },
 ];
 
 export const publications = [
